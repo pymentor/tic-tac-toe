@@ -204,7 +204,7 @@ class Game:
                 if cells[row_idx][col_idx].value == CellValue.X:
                     cells_filled_with_x += 1
 
-                elif cells[row_idx][col_idx] == CellValue.O:
+                elif cells[row_idx][col_idx].value == CellValue.O:
                     cells_filled_with_o += 1
 
                 row_idx += 1

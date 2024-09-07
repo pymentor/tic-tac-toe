@@ -13,6 +13,14 @@ from unit.objects import (
     cells_with_winner_value_x_in_col_2,
     cells_with_winner_value_x_in_col_3,
     cells_with_parity,
+    cells_with_winner_value_o_in_diag_1,
+    cells_with_winner_value_o_in_diag_2,
+    cells_with_winner_value_o_in_row_1,
+    cells_with_winner_value_o_in_row_2,
+    cells_with_winner_value_o_in_row_3,
+    cells_with_winner_value_o_in_col_1,
+    cells_with_winner_value_o_in_col_2,
+    cells_with_winner_value_o_in_col_3,
 )
 
 
@@ -21,6 +29,8 @@ from unit.objects import (
     [
         (cells_with_winner_value_x_in_diag_1(), CellValue.X),
         (cells_with_winner_value_x_in_diag_2(), CellValue.X),
+        (cells_with_winner_value_o_in_diag_1(), CellValue.O),
+        (cells_with_winner_value_o_in_diag_2(), CellValue.O),
         (cells_with_winner_value_x_in_row_1(), None),
         (cells_with_winner_value_x_in_row_2(), None),
         (cells_with_winner_value_x_in_row_3(), None),
@@ -44,6 +54,9 @@ def test__get_winner_value_in_diags(
         (cells_with_winner_value_x_in_row_1(), CellValue.X),
         (cells_with_winner_value_x_in_row_2(), CellValue.X),
         (cells_with_winner_value_x_in_row_3(), CellValue.X),
+        (cells_with_winner_value_o_in_row_1(), CellValue.O),
+        (cells_with_winner_value_o_in_row_2(), CellValue.O),
+        (cells_with_winner_value_o_in_row_3(), CellValue.O),
         (cells_with_winner_value_x_in_col_1(), None),
         (cells_with_winner_value_x_in_col_2(), None),
         (cells_with_winner_value_x_in_col_3(), None),
@@ -67,6 +80,9 @@ def test__get_winner_value_in_rows(
         (cells_with_winner_value_x_in_col_1(), CellValue.X),
         (cells_with_winner_value_x_in_col_2(), CellValue.X),
         (cells_with_winner_value_x_in_col_3(), CellValue.X),
+        (cells_with_winner_value_o_in_col_1(), CellValue.O),
+        (cells_with_winner_value_o_in_col_2(), CellValue.O),
+        (cells_with_winner_value_o_in_col_3(), CellValue.O),
         (cells_with_parity(), None),
     ],
 )

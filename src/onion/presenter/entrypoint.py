@@ -1,12 +1,13 @@
 from argparse import Namespace
 
+from onion.domain.dataclasses_.game_result import GameResult
 from onion.presenter.cli.parser import parse_args
 from onion.presenter.cli.validators.randomizer import RandomizerType
 from onion.presenter.di.facade import Dependencies, dependencies_facade
 from onion.service.game_launcher import launch_game
 
 
-def entrypoint() -> None:
+def entrypoint() -> GameResult:
     """
     Entry point of the application.
     """

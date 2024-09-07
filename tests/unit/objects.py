@@ -15,6 +15,22 @@ def cells_with_winner_value_x_in_diag_1() -> list[list[Cell]]:
     ]
 
 
+def cells_with_winner_value_o_in_diag_1() -> list[list[Cell]]:
+    return [
+        [Cell(value=CellValue.O), Cell(value=CellValue.X), Cell(value=CellValue.X)],
+        [Cell(value=CellValue.X), Cell(value=CellValue.O), Cell(value=CellValue.X)],
+        [Cell(value=CellValue.O), Cell(value=CellValue.X), Cell(value=CellValue.O)],
+    ]
+
+
+def cells_with_winner_value_o_in_diag_2() -> list[list[Cell]]:
+    return [
+        [Cell(value=CellValue.X), Cell(value=CellValue.X), Cell(value=CellValue.O)],
+        [Cell(value=CellValue.X), Cell(value=CellValue.O), Cell(value=CellValue.X)],
+        [Cell(value=CellValue.O), Cell(value=CellValue.X), Cell(value=CellValue.O)],
+    ]
+
+
 def cells_with_winner_value_x_in_diag_2() -> list[list[Cell]]:
     """
     Returns a list of cells with a winner value in the second diagonal - from top right to bottom left.
@@ -59,6 +75,39 @@ def cells_with_winner_value_x_in_row_3() -> list[list[Cell]]:
     ]
 
 
+def cells_with_winner_value_o_in_row_1() -> list[list[Cell]]:
+    """
+    Returns a list of cells with a winner value in the first row.
+    """
+    return [
+        [Cell(value=CellValue.O), Cell(value=CellValue.O), Cell(value=CellValue.O)],
+        [Cell(value=CellValue.E), Cell(value=CellValue.X), Cell(value=CellValue.O)],
+        [Cell(value=CellValue.E), Cell(value=CellValue.O), Cell(value=CellValue.E)],
+    ]
+
+
+def cells_with_winner_value_o_in_row_2() -> list[list[Cell]]:
+    """
+    Returns a list of cells with a winner value in the first row.
+    """
+    return [
+        [Cell(value=CellValue.X), Cell(value=CellValue.E), Cell(value=CellValue.X)],
+        [Cell(value=CellValue.O), Cell(value=CellValue.O), Cell(value=CellValue.O)],
+        [Cell(value=CellValue.E), Cell(value=CellValue.O), Cell(value=CellValue.E)],
+    ]
+
+
+def cells_with_winner_value_o_in_row_3() -> list[list[Cell]]:
+    """
+    Returns a list of cells with a winner value in the first row.
+    """
+    return [
+        [Cell(value=CellValue.E), Cell(value=CellValue.X), Cell(value=CellValue.E)],
+        [Cell(value=CellValue.E), Cell(value=CellValue.X), Cell(value=CellValue.O)],
+        [Cell(value=CellValue.O), Cell(value=CellValue.O), Cell(value=CellValue.O)],
+    ]
+
+
 def cells_with_winner_value_x_in_col_1() -> list[list[Cell]]:
     """
     Returns a list of cells with a winner value in the first column.
@@ -89,6 +138,39 @@ def cells_with_winner_value_x_in_col_3() -> list[list[Cell]]:
         [Cell(value=CellValue.O), Cell(value=CellValue.E), Cell(value=CellValue.X)],
         [Cell(value=CellValue.E), Cell(value=CellValue.O), Cell(value=CellValue.X)],
         [Cell(value=CellValue.E), Cell(value=CellValue.O), Cell(value=CellValue.X)],
+    ]
+
+
+def cells_with_winner_value_o_in_col_1() -> list[list[Cell]]:
+    """
+    Returns a list of cells with a winner value in the first column.
+    """
+    return [
+        [Cell(value=CellValue.O), Cell(value=CellValue.O), Cell(value=CellValue.E)],
+        [Cell(value=CellValue.O), Cell(value=CellValue.X), Cell(value=CellValue.O)],
+        [Cell(value=CellValue.O), Cell(value=CellValue.O), Cell(value=CellValue.E)],
+    ]
+
+
+def cells_with_winner_value_o_in_col_2() -> list[list[Cell]]:
+    """
+    Returns a list of cells with a winner value in the first column.
+    """
+    return [
+        [Cell(value=CellValue.E), Cell(value=CellValue.O), Cell(value=CellValue.E)],
+        [Cell(value=CellValue.X), Cell(value=CellValue.O), Cell(value=CellValue.O)],
+        [Cell(value=CellValue.E), Cell(value=CellValue.O), Cell(value=CellValue.E)],
+    ]
+
+
+def cells_with_winner_value_o_in_col_3() -> list[list[Cell]]:
+    """
+    Returns a list of cells with a winner value in the first column.
+    """
+    return [
+        [Cell(value=CellValue.E), Cell(value=CellValue.E), Cell(value=CellValue.O)],
+        [Cell(value=CellValue.X), Cell(value=CellValue.O), Cell(value=CellValue.O)],
+        [Cell(value=CellValue.E), Cell(value=CellValue.X), Cell(value=CellValue.O)],
     ]
 
 
