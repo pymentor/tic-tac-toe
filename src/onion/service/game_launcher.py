@@ -3,7 +3,7 @@ from onion.domain.interfaces.domain.game import IGame
 from onion.domain.interfaces.infrastructure.logger import ILogger
 
 
-def launch_game(game: IGame, logger: ILogger) -> None:
+def launch_game(game: IGame, logger: ILogger) -> GameResult:
     """
     Use case (scenario) that launches the game.
 
@@ -19,3 +19,5 @@ def launch_game(game: IGame, logger: ILogger) -> None:
         f"{'Winner is ' + result.winner.get_name() if result.winner else 'No winners, no loosers. Parity'}.\n"
         f"Board:\n{result.board.get_cells_hr_representation()}"
     )
+
+    return result

@@ -33,4 +33,5 @@ app.add_route(ROUTE_PATH, handle_request, methods=["GET"])
 if __name__ == "__main__":
     import uvicorn
 
+    # IMPORTANT: this is NOT production ready way to run the service
     uvicorn.run(app, host="127.0.0.1", port=8000)

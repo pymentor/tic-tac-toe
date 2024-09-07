@@ -13,10 +13,3 @@ class GameResult:
 
     winner: IPlayer | None
     board: IBoard
-
-    @property
-    def parity(self) -> bool:
-        """
-        Checks if the game is a parity. If there is no winner, the game is a parity.
-        """
-        return not self.winner

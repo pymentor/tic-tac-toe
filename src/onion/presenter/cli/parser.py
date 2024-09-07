@@ -64,7 +64,7 @@ def parse_args():
         type=non_empty_string,
         help="URL of the randomizer service",
         required=False,
-        default="http://localhost:8000/choice",
+        default="http://localhost:8000/choice",  # TODO: move to config
     )
 
     return parser.parse_args()

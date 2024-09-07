@@ -3,6 +3,11 @@
 - Solution's author: Artsiom Praneuski (artem.pronevskiy@gmail.com, @artempronevskiy)
 - Last revision: 2024-09-07
 
+#### Problem description:
+
+- [EN](/problem_en.md)
+- [RU](/problem_ru.md)
+
 #### Table of contents:
 
 - [Description](#description)
@@ -97,12 +102,6 @@ pytest tests
   - `service` layer is responsible for game rules (use case).
   - `domain` layer is responsible for business logic and entities.
 - All dependencies are injected into the components on `presenter` layer.
-- Each layer is supposed to have its own tests.
-- In order to keep modules structure and code clean - please use linters and formatters:
-  - `black` for code formatting
-  - `flake8` for code style checking
-  - `mypy` for static type checking
-  - `isort` for imports sorting
 
 #### Issue reporting:
 
