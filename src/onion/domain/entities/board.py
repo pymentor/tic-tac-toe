@@ -27,7 +27,7 @@ class Board:
         Returns a human readable representation of the board.
         """
         return "\n".join(
-            [" | ".join([str(cell.value) for cell in row]) for row in self._cells]
+            " | ".join(str(cell.value) for cell in row) for row in self._cells
         )
 
     def get_empty_cells_positions(self) -> list[CellPosition]:
